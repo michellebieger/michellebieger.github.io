@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">M. F. Bieger, PhD</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li class="active"><a href="research.html">Research</a></li>
+							<li><a href="softeng.html">Software Dev</a></li>
+							<li><a href="speakerevents.html">Speaker Events</a></li>
+							<li><a href="teachingandoutreach.html">Outreach</a></li>
+							<li><a href="writing.html">Writing</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/mfbieger" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/3degreesreading/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/michellebieger" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Updated: April 2024</span>
+									<h2>Research</h2>
+									<p>On this page you can find the various research fields that I have been involved in and continue to be involved in. <br />
+									You can find my research publications at the following links: <a href="https://orcid.org/0000-0001-9166-3042">Orcid page</a>; <a href="https://arxiv.org/a/bieger_m_1.html">papers on arXiv</a>; <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0001-9166-3042&sort=date%20desc%2C%20bibcode%20desc&p_=0">papers on ADS</a>. <br />
+									I've spoken about my research at many public events, which you can read about on my <a href="speakerevents.html">Speaker Events</a> page. <br />
+									</p>
+								</header>
+								
+								<!-- <h3>AI ethics</h3>
+									<span class="image left"><img src="images/fractal2.png" alt="" /></span>
+									<p>During my PhD, I demonstrated in a year-two Natural Sciences laboratory course (NSC2001) at the University of Exeter. This entails:</p>
+										<ul>
+											<li>helping students prepare and understand experiments,</li>
+											<li>teaching students about the difference between ChatGPT and Google, and introducing them to using AI tools effectively and ethically,</li>
+											<li>working with them through the experiments including troubleshooting on the day of,</li>
+											<li>and grading reports and presentations from students.</li>
+										</ul>
+
+									
+									<p>After demonstrating from 2019-2022, helping to adapt the course to online learning during the pandemic and then transitioning back again, I am lead demonstrator for the 2022-2023 academic year, formalising my role in the past where I have helped interface between module leaders and fellow demonstrators and lab technicians. </p>
+									<span class="image right"><img src="images/fractal.png" alt="" /></span>
+									<p>Getting to see students grow from experiment to experiment to scientists in their own right was one of the best aspects of teaching. The images to the left and right here represent one the experiments the students were performing--recreating fractals with electrodeposition--and I often helped their efforts in representing their experiments with Python modelling, or setting up their experiment design in an effective way.</p> -->
+								<h3>Exoplanet atmospherics</h3>
+								<p>Exoplanet science concerns itself with questions surrounding these planets around other stars, in an attempt to narrow down on the questions that humanity have been grappling with since time immemorial: how did we get here? My doctorate and ongoing research focuses on the questions of these planet’s atmospheres. What are planet atmospheres composed of? What kind of chemistry occurs in these atmospheres? I do this primarily with the tool of retrievals.<br /></p>
+								<span class="image right"><img src="images/retrieval_process.png" alt="A computer graphic of the process of a retrieval, from observation to model."/></span>
+								<p>Attempting to answer these questions is done through both observing and modelling. As a planet revolves around its host star, light from the host star passes through the planet’s atmosphere. With both ground-based and space-based telescopes, we can capture this light with spectroscopic instruments. Spectroscopy takes advantage of molecules’ inherent quantum properties to enable us to discern how molecules are being either absorbed or scattered by the planet’s atmosphere. <br />
+								Forward models are able to build up a picture of a planet’s atmosphere by approximating the radiation from host star down through layers of the atmosphere. Retrievals combine these with observations; and iterate over the forward models in order to attempt to match a forward model to the spectra using Bayesian optimisation and parameter estimation. <br />
+								Below is a highlights reel of my most prominent projects. 
+								</p>
+
+								<h4><i>frogr</i> development</h4>
+								<p><i>frogr</i> is an acronym of "Fro-m gas to retrieval" and homage to the classic 1997 Hasbro Interactive computer game, Frogger: He’s Back!. The logo is generated with PhyloPic, depicting the <i>bufo bufo</i> species. <i>frogr</i> is <a href="https://github.com/michellebieger/frogr">available to use</a> as open-source software from GitHub.
+								<span class="image right"><img src="images/frogr.png" style="max-width: 50%;" alt="A computer graphic of a frogr."/></span></p>
+								<ul>
+									<li>Created a plugin for TauREx 3.1, called <i>frogr</i>, from <a href="https://www.explore-exoplanets.eu/resource/atmo/">ATMO</a>, which allows the use of ATMO's chemistry protocols to be applied to the forward modelling in TauREx 3.1, thus enabling retrievals with equilibrium and non-equilibrium chemical processes in the atmosphere of planets. This furthers retrievals' abilities to detect for physical processes occurring in planets and increases the amount of atmospheric parameters that we can solve for</li>
+									<li>Python-wrapped Fortran code will be effectively packaged for TauREx 3.1's existing modular architecture and then implemented for retrievals, which includes debugging and trial retrievals for testing purposes</li>
+									<li>ATMO plugin to be used in Bieger et al. 2023 (in prep)</li>
+								</ul>
+
+								<h4>WASP-79b analysis</h4>
+								<span class="image right"><img src="images/Commission_glazed.jpg" alt="A hand-drawn portrait of a Panamanian dancer."/></span>
+								<ul>
+									<li>Analysed the chemistry of this hot-Jupiter planet through the Hubble Space Telescope (HST) and Spitzer Space Telescope (Spitzer) emission and transmission spectra, culminating in Bieger et al. 2022 (in prep). This was off the back of my involvement in analysing this planet and two other hot-Jupiters in Skaf et al. 2020</li>
+									<li>Used the  <a href="https://github.com/ucl-exoplanets/Iraclis"><i>Iraclis</i></a> data reduction pipeline to reduce original HST WFC-141 grism transmission and emission spectra, followed by using the <a href="https://github.com/ucl-exoplanets/TauREx3_public">TauREx 3.1</a> retrieval modelling tool, with the GGChem equilibrium chemistry plugin tool, in order to analyse the resultant spectra</li>
+									<li>The image to the right is one I commissioned from Panamanian-American illustrator <a href="https://www.alexnaimoli.com/">Alex Naimoli</a>. The country of Panama, in an IAU NameExoWorlds public engagement campaign, named WASP-79b <i>Pollera</i>, which is the traditional costume that a woman wears when dancing the Panamanian dance, <i>El Punto</i>. The host star was named <i>Montuno</i> in accompaniment, which is the traditional costume of a woman’s partner when dancing to the drums of the El Punto</li>
+								</ul>
+
+								<h4>PARC and ARC development</h4>
+								<ul>
+									<li>Familiarised myself with an existing Python and IDL code architecture from collaborator, during which I commented the code throughout to improve readability for future users </li>
+									<li>Time-profiled code, aiming to increase efficiency, and reported results in order to improve overall architecture</li>
+									<li>Reworked code for user-friendliness: created features such as self-creating folders in order to minimise the amount of user interaction required before using code and allowing for more seamless use </li>
+								</ul>
+
+								<h3>Earth atmospherics</h3>
+								<p>Project title: <i>Determining the Dust Concentration of Mixed Dust/Pollution Plumes from Lidar Measurements in East Asia</i>.<br />
+								<span class="image left"><img src="images/China_sandstorm.jpg" alt="Aerial view of a sandstorm over China."/></span>
+								This project began by exploring the literature of atmospheric aerosols in East Asia, particularly dust and anthropogenic aerosols. Due to the nature of anthropogenic aerosols, they are particularly prone to mixing with dust that washes over East Asia in large storms in various seasons. This can move polluting particles from one country to another, which becomes particularly pertinent as the link between pollution and negative health outcomes become more prominent, and international legal frameworks become more invested in addressing climate crisis issues. <br />
+								In the picture on the left, a spring sandstorm over China can be seen. This image is from the Moderate Resolution Imaging Spectroradiometer on the NASA Terra Satellite (Lindsey, 2010). As Mueller et al. (2010) states, satellite passive remote sensing and other existing technology is inadequate for separating out dust from anthropogenic urban haze; nor can it identify in which layer of the atmosphere the dust resides in relative to other pollution. Sun photometers and LIDAR can instead fill this gap in knowledge--and it was LIDAR detection methods that I investigated with my supervisors, Detlef Mueller and Boyan Tatarov. <br />
+								I aimed to address the following in my project: how does the composition of East Asian dust lend itself to mixing with pollution and ensuing transportation? In which way is LIDAR the optimal technology for measuring East Asian dust? What are the principles behind LIDAR design and operation, and how are the results best analysed? 
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section> -->
+						<section class="split contact">
+							<section>
+								<h3>UK Phone</h3>
+								<p><a href="#">(+44) 0775-434-1329</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">michellebieger@live.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/mfbieger" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/3degreesreading/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/michellebieger" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
